@@ -57,15 +57,8 @@ public class Bot {
                 "3. To determine the execution time of a program.\n" +
                 "4. To interrupt the execution of a program.");
 
-        while(true){
-            int userAnswer = scanner.nextInt();
-
-            if (userAnswer==2){
-                System.out.println("Congratulations, have a nice day!");
-                break;
-            } else{
-                System.out.println("Please, try again.");
-            }
+        while ( scanner.hasNext() && scanner.nextInt() != 2){
+            System.out.println("Please, try again.");
         }
     }
 
